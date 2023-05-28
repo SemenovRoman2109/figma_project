@@ -10,6 +10,16 @@ html,body{
     background: #EECFE0;
 }
 
+body::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #E0B2C9;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #913B66; 
+    border-radius: 5px; 
+}
+
 header{
     z-index: 100;
     box-sizing: border-box;
@@ -173,4 +183,52 @@ main{
     width: 91%;
     height: 90%;
 
+}
+
+
+@media only screen and (max-width: 500px) {
+    .side-menu{
+        opacity: 0;
+    }
+    main{
+        left: 0;
+        width: 100%;
+    }
+
+    .standart-button{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 25px;
+        cursor: pointer;
+        background: #F8EDF2;
+        border: 2px solid #E2B6CC;
+        border-radius: 10px;
+    }
+    
+    .standart-button:hover { 
+        background: #EADFE4;
+        cursor: pointer;
+    }
+    
+    .standart-button p{
+        font-family: 'Gabriela';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+    
+        color: #C46E99;
+    }
+
+    .pc-header{
+        display: none;
+    }
+
+    .mobile-header{
+        
+    }
+    
 }

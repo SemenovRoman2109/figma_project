@@ -4,11 +4,8 @@ main .publication{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px 35px 35px;
+    padding: 25px 0px ;
     gap: 10px;
-
-    width: 588px;
-    height: 699px;
 
     border-bottom: 2px solid #D392B3;
 }
@@ -135,4 +132,12 @@ main .publication .content-button .all-button .button p{
     line-height: 20px;
     text-align: center;
     color: #913B66;
+}
+
+@media only screen and (max-width: 500px) {
+    main .publication .content-button .content{
+        width: 86vw;
+        height: 107.3vw;
+    }
+    
 }

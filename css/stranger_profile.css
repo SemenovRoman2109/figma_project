@@ -117,6 +117,14 @@ main .content .all-publication .publication-row{
     gap: 15px;
 }
 
+main .content .all-publication .publication-row .double-publication{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px; 
+}
+
 main .content .all-publication .publication-row .publication{
     display: flex;
     flex-direction: column;
@@ -164,4 +172,39 @@ main .content .all-publication .publication-row .publication .count-views{
     line-height: 17px;
     text-align: center;
     color: #913B66;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    main .content .information .abobut-creator .text-information .profile-information{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    main .content .information .abobut-creator{
+        flex-direction: column;
+    }
+
+    main .content .information .abobut-creator .text-information .profile-information div{
+        display: none;
+    }
+
+
+    main .content .all-publication .publication-row .publication .img-box{
+        width: 200px;
+        height: 250px;
+    }
+
+
+
+
+
+    main .content .all-publication .publication-row{     
+        flex-direction: column;
+    }
+
+    
 }
