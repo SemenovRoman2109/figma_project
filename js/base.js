@@ -20,3 +20,23 @@ listCategory.forEach(function(category, index, listCategory) {
         }
     }); 
   });
+
+let buttonOpenSideMenu = document.querySelector(".open-side-menu");
+let sideMenu = document.querySelector(".side-menu");
+
+buttonOpenSideMenu.addEventListener("click",function(event){
+    let coverDiv = document.createElement('div'); 
+    coverDiv.style.zIndex
+    coverDiv.classList.add('cover-div'); 
+    document.body.append(coverDiv);
+
+    sideMenu.style.opacity = 1;
+    console.log(1);
+
+    coverDiv.addEventListener("click",function(event){
+        let coverdiv = document.querySelector('.cover-div');
+        coverdiv.remove();
+        sideMenu.style.opacity = 0;
+    })
+})
+

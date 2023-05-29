@@ -11,7 +11,7 @@ main .create-publication{
     align-items: center;
     padding: 0px;
 
-    width: 29.7%;
+    width: 420px;
     height: 75%;
 
     background: #FFFFFF;
@@ -72,4 +72,11 @@ main .create-publication .container .content p{
     line-height: 26px;
 
     color: #12070D;
+}
+
+@media only screen and (max-width: 500px) {
+    main .create-publication{
+        width: 350px;
+        height: 62%;
+    }
 }
