@@ -11,9 +11,9 @@ main{
     height: 92%;
 }
 
+
 main .all-chats{
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 10px 0px 0px 10px;
@@ -21,7 +21,7 @@ main .all-chats{
 
     width: 20%;
     height: 100%;
-
+    background-color: #EECFE0;
     border-right: 1px solid #913B66;
 }
 
@@ -84,6 +84,7 @@ main .all-chats .list-chat{
 }
 
 main .all-chats .list-chat .interlocutor{
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -173,7 +174,7 @@ main .selected-chat .interlocutors-data{
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 0 15px;
 
@@ -290,7 +291,7 @@ main .selected-chat .send-message{
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 625px;
+    gap: 5%;
     background: #E2B6CC;
     border-top: 1px solid #913B66;
 
@@ -314,4 +315,62 @@ main .selected-chat .send-message input{
 main .selected-chat .send-message img{
     height: 73%;
     width: auto;
+}
+
+@media only screen and (min-width: 501px) {
+    .all-chats{display: flex;}
+    .button-back{display: none;}
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .all-chats{
+        position: absolute;
+        right:100%;
+        display: none;
+        transition: all 2s;
+        width: 100%;
+    }
+
+    .back-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 5px;
+    }
+
+    .button-back{
+        cursor: pointer;
+        display: block;
+        width: 40px;
+        height: auto;
+    }
+
+    main {
+        left: 0;
+        width: 100%;
+    }
+
+    main .selected-chat{
+        width: 100%;
+    
+    }
+
+    main .selected-chat .chat{
+        height: 86.6%;
+    }
+
+    html,body{
+        height: 100%;
+    }
+
+    main .selected-chat .interlocutors-data{
+        gap: 45%;
+    }
+
+    main .selected-chat .interlocutors-data img{
+        height: 40px;
+    }
+    
 }

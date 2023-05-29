@@ -29,8 +29,8 @@ buttonOpenSideMenu.addEventListener("click",function(event){
     coverDiv.style.zIndex
     coverDiv.classList.add('cover-div'); 
     document.body.append(coverDiv);
-
-    sideMenu.style.opacity = 1;
+    sideMenu.style.display = "flex";
+    setTimeout(() =>  sideMenu.style.opacity = 1, 1)
     console.log(1);
 
     coverDiv.addEventListener("click",function(event){
